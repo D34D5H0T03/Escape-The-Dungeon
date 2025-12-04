@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../style/MainMenu.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+
+    <!-- Dark overlay for readability -->
+    <StackPane prefHeight="501.0" prefWidth="828.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
+    <!-- Main content -->
+    <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="22.0" prefHeight="501.0" prefWidth="828.0" spacing="40" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <!-- Game Title -->
+        <VBox alignment="TOP_CENTER" spacing="10">
+         <children>
+            <Label alignment="TOP_CENTER" blendMode="RED" prefHeight="114.0" prefWidth="834.0" text="Escape The Dungeon" textFill="#ff0000f2">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="85.0" />
+               </font>
+            </Label>
+         </children>
+        </VBox>
+         <Label alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1176.0" style="-fx-text-fill: #a9a9a9;" text="Can You Escape?">
+             <font>
+                 <Font name="Times New Roman" size="24" />
+             </font>
+         </Label>
+
+        <!-- Footer -->
+        <Label alignment="TOP_CENTER" prefHeight="53.0" prefWidth="1322.0" style="-fx-text-fill: #696969; -fx-font-size: 14;" text="A tale of despair and perseverance...">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   
+        <!-- Menu Buttons -->
+        <VBox alignment="CENTER" prefHeight="496.0" prefWidth="1280.0" spacing="15">
+            <Button fx:id="newGameButton" alignment="TOP_CENTER" onAction="#handleNewGame" styleClass="menu-button" text="NEW GAME" />
+   
+            <Button fx:id="loadGameButton" alignment="TOP_CENTER" onAction="#handleLoadGame" styleClass="menu-button" text="LOAD GAME" />
+   
+            <Button fx:id="optionsButton" alignment="TOP_CENTER" onAction="#handleOptions" styleClass="menu-button" text="OPTIONS" />
+   
+            <Button fx:id="exitButton" alignment="TOP_CENTER" onAction="#handleExit" styleClass="menu-button" text="EXIT" />
+        </VBox>
+
+    </VBox>
+
+</AnchorPane>

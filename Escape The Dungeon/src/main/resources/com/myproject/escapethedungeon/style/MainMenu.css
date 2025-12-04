@@ -1,0 +1,113 @@
+
+.root {
+    -fx-font-family: "Times New Roman", serif;
+}
+
+.menu-button {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #c0c0c0;
+    -fx-border-color: #444444;
+    -fx-border-width: 2px;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px 60px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+.menu-button:hover {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #8b0000;
+    -fx-text-fill: #ffffff;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.3s;
+}
+
+.menu-button:pressed {
+    -fx-background-color: #0a0a0a;
+    -fx-border-color: #660000;
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* Class Selection Styling */
+.class-button {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #c0c0c0;
+    -fx-border-color: #444444;
+    -fx-border-width: 2px;
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-min-width: 200px;
+}
+
+.class-button:hover {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #8b0000;
+    -fx-text-fill: #ffffff;
+}
+
+.class-button.selected {
+    -fx-background-color: #330000;
+    -fx-border-color: #cc0000;
+    -fx-text-fill: #ffffff;
+}
+
+/* Text Fields */
+.text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #444444;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+}
+
+.text-field:focused {
+    -fx-border-color: #8b0000;
+}
+
+/* Labels */
+.title-label {
+    -fx-text-fill: #8b0000;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 2, 2);
+}
+
+.subtitle-label {
+    -fx-text-fill: #a9a9a9;
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+}
+
+/* Stats Display */
+.stat-label {
+    -fx-text-fill: #c0c0c0;
+    -fx-font-size: 14px;
+}
+
+.stat-value {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Scroll Panes */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Tooltip */
+.tooltip {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #8b0000;
+    -fx-border-width: 1px;
+    -fx-font-size: 12px;
+}
